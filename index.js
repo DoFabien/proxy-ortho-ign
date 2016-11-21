@@ -14,7 +14,7 @@ app.get('/:z/:x/:y', function (req, res) {
     var p = req.params;
     let orthoIgn = 'https://gpp3-wxs.ign.fr/' + ApiKey +
         '/wmts?LAYER=ORTHOIMAGERY.ORTHOPHOTOS&EXCEPTIONS=text/xml&FORMAT=image/jpeg&SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE=normal&TILEMATRIXSET=PM&&TILEMATRIX='
-        + p.z + '&TILECOL=' + p.x + '&TILEROW=' + p.z;
+        + p.z + '&TILECOL=' + p.x + '&TILEROW=' + p.y;
 
 
     let options = {
