@@ -1,0 +1,20 @@
+{
+  "name": "orthignproxy",
+  "preferGlobal": true,
+  "version": "0.0.1",
+  "author": "Fabien",
+  "description": "IGN Ortho proxy for Osm Go",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "start": "node --max_old_space_size=2000  index.js"
+  },
+  "dependencies": {
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "request": "^2.79.0"
+  }
+}
