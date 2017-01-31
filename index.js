@@ -13,7 +13,7 @@ var cron = require('node-cron');
 app.use(cors());
 app.use(compression());
 
-cron.schedule('0,30 * * * *', function () { //  cron.schedule('0,30 * * * *', function(){
+cron.schedule('0,30 * * * *', function () { // on supprime le cache toute les 30 minutes
     fs.readdir('cache/', function (err, files) {
         files.forEach(function (file, index) {
             fs.unlink(path.join('cache/', file));
